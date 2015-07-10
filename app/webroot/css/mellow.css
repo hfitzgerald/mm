@@ -1,0 +1,87 @@
+body{background:#452010;margin:0;padding:0;}
+.index{background:url(/img/background_grad.png) 50% 990px repeat-x #452010;}
+#wrapper{min-width:960px;position:relative;margin:0 auto;}
+.index #wrapper{background:url(/img/home_background.jpg) top no-repeat;}
+.index #content{height:824px;}
+.rules #wrapper{background:url(/img/rules_background.jpg) top no-repeat;}
+.rules #content{height:768px;font-family:adelle;font-weight:700;}
+.game #wrapper{background:url(/img/game_background.jpg) top no-repeat;}
+.game #content{height:934px;}
+.menu #wrapper{background:url(/img/menu_background.jpg) top no-repeat;}
+.menu #content{height:1308px;}
+.menuWrapper{background:url(/img/header_loop.jpg) top;}
+#rulesBox{height:650px;width:600px;margin:140px auto 0;}
+#rulesBox a{color:#503328;}
+.rulesHeadline{background:#f2c801;font-size:13px;display:inline;font-weight:700;padding:2px 4px;}
+.rulesContainer{padding-top:30px;font-size:12px;color:#503328;height:566px;padding-right:10px;}
+.overlay{background:url(/img/nothing.png); cursor: pointer;}
+#scrollbar1{width:600px;clear:both;margin:0 0 10px;}
+#scrollbar1 .viewport{width:570px;height:550px;overflow:hidden;position:relative;}
+#scrollbar1 .overview{list-style:none;position:absolute;left:0;top:0;}
+#scrollbar1 .thumb .end,#scrollbar1 .thumb{background-color:#452010;}
+#scrollbar1 .scrollbar{position:relative;float:right;width:15px;}
+#scrollbar1 .track{border-top:1px solid #b29e88;border-bottom:1px solid #b29e88;background:url(/img/barLoop.png) #dcc4a8;height:100%;width:13px;position:relative;padding:0 1px;}
+#scrollbar1 .thumb{height:20px;width:13px;cursor:pointer;overflow:hidden;position:absolute;top:0;}
+#scrollbar1 .thumb .end{overflow:hidden;height:5px;width:13px;}
+#scrollbar1 .disable{display:none;}
+#hover_menu{position:absolute;background:url(/img/home_grown_lock.png);width:362px;height:161px;left:132px;cursor:pointer;}
+#mellow.index input{position:absolute;top:390px;left:694px;background:none;border:0;color:#fff;font-weight:700;font-size:17px;text-align:center;}
+.game_overlay{width:373px;height:232px;position:absolute;top:592px;left:0px;z-index:3; background: url(/img/phoneSprite.png) no-repeat;}
+.game_overlay:hover{background: url(/img/phoneSprite.png) -6px -334px no-repeat;}
+.soup_overlay{width:300px;height:100px;position:absolute;left:581px;top:531px;z-index:3;}
+.bread_overlay{width:278px;height:147px;position:absolute;left:316px;top:475px;z-index:3;}
+.sandwich_overlay{width:258px;height:153px;position:absolute;top:516px;left:-138px;z-index:3;}
+.pizza_overlay{width:580px;height:142px;position:absolute;top:680px;right:26px;z-index:3;}
+.popUp{width:334px;height:142px;display:none;position:absolute;z-index:1;}
+.popUp img{position:absolute;z-index:0;}
+.bread{position:absolute;left:360px;top:390px;}
+.soup{position:absolute;left:575px;top:453px;}
+.sandwich{position:absolute;left:-4px;top:453px;}
+.pizza{position:absolute;left:620px;top:662px;}
+#menu{height:75px;background:url(/img/header_background.jpg) top no-repeat;}
+#footer{background:url(/img/footer_bkg.jpg) top no-repeat #000;height:124px;}
+.floatLink{display:block;width:114px;height:39px;position:absolute;background-position:center;top:746px;}
+.enter{width:53px;height:48px;position:absolute;background:url(/img/enter_button.png) no-repeat;left:889px;top:383px;display:block;}
+.android{background:url(/img/icon_android_market.png) no-repeat;display:none;left:223px;}
+.apple{left:103px;display:none;background:url(/img/icon_app_store.png) no-repeat;}
+.yellowText{width:410px;position:absolute;height:75px;left:168px;top:280px;background:url(/img/celebrating_text.png) no-repeat; text-indent:-9999px; overflow:hidden;}
+.findMellow{background:url(/img/find_a_mellow_mushroom.png) no-repeat;width:178px;height:75px;display:block;position:absolute;left:712px;top:432px;}
+.menuItems{position:absolute;left:496px;top:26px;}
+.menuItems .menu{width:61px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-7px 0;float:left;margin-left:24px;}
+.menuItems .menu:hover{background-position:-7px -28px;}
+.menuItems .locations{width:90px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-80px 0;float:left;margin-left:24px;}
+.menuItems .locations:hover{background-position:-80px -28px;}
+.menuItems .game{width:61px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-187px 0;float:left;margin-left:20px;}
+.menuItems .game:hover{background-position:-187px -28px;}
+.menuItems .rules{width:61px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-266px 0;float:left;margin-left:24px;}
+.menuItems .rules:hover{background-position:-266px -28px;}
+.menuItems .fb{width:25px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-369px 0;float:left;margin-left:23px;}
+.menuItems .google{width:25px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-395px 0;float:left;}
+.menuItems .twitter{width:25px;height:27px;background:url(/img/menu_sprites.png) no-repeat;display:block;background-position:-421px 0;float:left;}
+.homeLink{width:120px;height:65px;display:block;position:absolute;z-index:5;}
+.socialBox{background:url(/img/socialize_with.png) no-repeat;width:243px;height:32px;position:absolute;top:12px;left:1px;}
+.footLinks{font-size:8px;position:absolute;right:10px;color:#fff;top:20px;font-weight:700;text-transform:uppercase;font-family:Arial, Helvetica, sans-serif;}
+.footLinks a{color:#bc7f0b;text-decoration:none;}
+.iWrapper{width:960px;position:relative;z-index:0;margin:0 auto;}
+.socialBox a{position:absolute;height:20px;width:46px;top:2px;}
+.socialBox a:hover{background:url(/img/bdot.png);}
+.socialBox .fb{left:120px;}
+.socialBox .tw{left:166px;}
+.socialBox .yt{left:206px;}
+.foodText{font-family:adelle;font-weight:700;width:263px;font-size:12px;position:absolute;color:#503328;line-height:17px;}
+.holy{top:753px;left:329px;font-size:12px;line-height:15px;}
+.cheese{top:750px;left:13px;}
+.steak{top:758px;left:654px;}
+.drunken{top:376px;left:9px;}
+.magic{top:366px;left:341px;}
+.ham{top:417px;left:653px;}
+.pie{top:1105px;left:331px;}
+#content .iWrapper {z-index:2;}
+.cake{top:1119px;left:7px;}
+#game{position:absolute;top:298px;left:86px;height:480px;width:800px;background:#000;}
+.smApple{background:url(/img/icon_app_store_small.png) no-repeat;height:25px;width:91px;right:134px;position:absolute;display:none;}
+.smAndroid{background:url(/img/icon_android_market_sm.png) no-repeat;height:25px;width:91px;display:none;right:50px;position:absolute;}
+#gameLinks{position:absolute;top:823px;width:893px;padding-left:67px; z-index:12;}
+.sandwich_overlay:hover{width: 423px; height: 199px;position: absolute;top: 460px;left: -138px;}
+.bread_overlay:hover{width: 375px;height: 191px;position: absolute;left: 316px;top: 392px;z-index: 3;}
+.soup_overlay:hover {width: 300px;height: 169px;position: absolute;left: 581px;top: 453px;

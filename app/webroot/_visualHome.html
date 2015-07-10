@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'>
+</script>
+
+<script>
+
+$(document).ready(function(){
+	
+	$('.overlay').bind('mouseover', function(evt){
+		popFade(evt, 1);
+	});
+	
+	$('.overlay').bind('mouseout', function(evt){
+		popFade(evt, 0);
+	});
+	
+	
+});
+
+function popFade(evt, fadeTo){
+	if($(evt.target).attr('class') == 'pizza_overlay overlay'){ $('.pizza').stop(true).fadeTo(300,fadeTo); } else
+	if($(evt.target).attr('class') == 'soup_overlay overlay'){ $('.soup').stop(true).fadeTo(300,fadeTo); } else
+	if($(evt.target).attr('class') == 'bread_overlay overlay'){ $('.bread').stop(true).fadeTo(300,fadeTo); } else
+	if($(evt.target).attr('class') == 'sandwich_overlay overlay'){ $('.sandwich').stop(true).fadeTo(300,fadeTo);}	
+}
+
+</script>
+
+</head>
+<style>
+<!--
+body{
+	background:#452010;	
+	margin:0px;
+	padding:0px;
+}
+
+#wrapper{
+	min-width:960px;
+	margin:0px auto;
+	position:relative;
+	background:url(img/home_background.jpg) top no-repeat;
+}
+
+#hover_menu{
+	position:absolute;
+	background:url(img/home_grown_lock.png);
+	width:362px;
+	height:161px;
+	left:132px;
+}
+
+#mellow.home input{
+	position:absolute;
+	top:390px;
+	left:694px;
+	background:none;
+	border:0px;
+	color:#fff;
+	font-weight:bold;
+	font-size:17px;
+	text-align:center;
+}
+
+.soup_overlay{
+	width:300px;
+	height:100px;
+	position:absolute;
+	left:581px;
+	top:531px;
+	z-index:3;
+}
+
+.bread_overlay{
+	width:218px;
+	height:87px;
+	position:absolute;
+	left:316px;
+	top:483px;
+	z-index:3;
+}
+
+.sandwich_overlay{
+	width:168px;
+	height:108px;
+	position:absolute;
+	top:553px;
+	left:-7px;
+	z-index:3;
+}
+
+.pizza_overlay{
+	width:580px;
+	height:142px;
+	position:absolute;
+	top:680px;
+	right:26px;
+	z-index:3;
+}
+
+.popUp{
+	width:334px;
+	height:142px;	
+	display:none;
+}
+
+.bread{
+	position:absolute;
+	left: 360px;
+	top: 390px;
+	background:url(img/popup_drunken_fun_guy.png);
+}
+
+.soup{
+	position:absolute;
+	left: 575px;
+	top: 453px;
+	background:url(img/popup_magic_mushroom_soup.png);
+}
+
+.sandwich{
+	position:absolute;
+	left: -4px;
+	top: 453px;
+	background:url(img/popup_ham_orchard_hoagie.png);
+}
+
+.pizza{
+	position:absolute;
+	left: 620px;
+	top: 662px;
+	background:url(img/popup_holy_shiitake_pie.png);
+}
+
+#menu{
+	height:75px;
+	background:url(img/header_background.jpg) top no-repeat;
+}
+
+#content{
+	height:824px;	
+}
+
+#footer{
+	background:url(img/footer_bkg.jpg) top no-repeat #000;
+	height:124px;	
+}
+
+.floatLink{
+	display:block;
+	width:114px;
+	height:39px;
+	position:absolute;
+	background-position:center;
+	top: 746px;
+}
+
+.enter{
+	width:53px;
+	height:48px;
+	position:absolute;
+	background:url(img/enter_button.png) no-repeat;
+	left: 889px;
+	top: 383px;
+	display:block;
+}
+
+.android{
+	background:url(img/icon_android_market.png) no-repeat;
+	left: 223px;
+}
+
+.apple{
+	left: 103px;
+	background:url(img/icon_app_store.png) no-repeat;
+}
+
+.yellowText{
+	width:410px;
+	position:absolute;
+	height:75px;
+	left: 168px; /*168*/
+	top: 280px;		/*284*/
+	background:url(img/celebrating_text.png) no-repeat;
+	overflow:hidden;
+
+	
+}
+
+.findMellow{
+	background:url(img/find_a_mellow_mushroom.png) no-repeat;
+	width:178px;
+	height:75px;
+	display:block;
+	position:absolute;
+	left: 712px;
+	top: 432px;
+}
+
+.menuItems{
+	position:absolute;
+	left: 496px;
+	top: 26px;
+}
+
+.menuItems .menu{
+	width:61px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-7px 0px;
+	float:left;
+	margin-left:24px;
+}
+.menuItems .menu:hover{background-position:-7px -28px;}
+
+.menuItems .locations{
+	width:90px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-80px 0px;
+	float:left;
+	margin-left:24px;
+}
+.menuItems .locations:hover{background-position:-80px -28px;}
+.menuItems .game{
+	width:61px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-187px 0px;
+	float:left;
+	margin-left:20px;
+}
+.menuItems .game:hover{background-position:-187px -28px;}
+.menuItems .rules{
+	width:61px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-266px 0px;
+	float:left;
+	margin-left:24px;
+}
+.menuItems .rules:hover{background-position:-266px -28px;}
+
+.menuItems .fb{
+	width:25px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-369px 0px;
+	float:left;
+	margin-left:23px;
+}
+
+.menuItems .google{
+	width:25px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-395px 0px;
+	float:left;
+}
+
+.menuItems .twitter{
+	width:25px;
+	height:27px;
+	background:url(img/menu_sprites.png) no-repeat;
+	display:block;
+	background-position:-421px 0px;
+	float:left;
+}
+
+.homeLink{
+	width:120px;
+	height:65px;
+	display:block;	
+	position:absolute;
+	z-index:5;
+}
+
+.socialBox{
+	background:url(img/socialize_with.png) no-repeat;	
+	width:243px;
+	height:32px;
+	position:absolute;
+	top:12px;
+	left:1px;
+}
+
+.footLinks{
+	font-size:8px;
+	position:absolute;
+	right:10px;
+	color:#fff;
+	top:20px;	
+	font-weight:700;
+	text-transform:uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.footLinks a{
+	color:#bc7f0b;
+	text-decoration:none;	
+}
+
+
+
+.iWrapper{
+	width:960px;
+	margin:0px auto;	
+	position:relative;
+}
+
+.socialBox a{
+	position:absolute;
+	height:20px;
+	width:46px;
+	top: 2px;
+}
+
+.socialBox a:hover{
+	background:url(img/bdot.png);	
+}
+
+.socialBox .fb{	left: 120px;}
+.socialBox .tw{	left: 166px;}
+.socialBox .yt{	left: 206px;}
+
+-->
+</style>
+
+<body id='mellow' class='home'>
+
+<div id='wrapper'>
+
+  <div id='menu'>
+    <div class='iWrapper'>
+    <div id='hover_menu'></div>
+    <a href='' class='homeLink'></a>
+   	  <div class='menuItems'>
+		<a href='' class='menu'></a>
+        <a href='' class='locations'></a>
+        <a href='' class='game'></a>
+        <a href='' class='rules'></a>
+        <a href='' class='fb'></a>
+        <a href='' class='google'></a>
+        <a href='' class='twitter'></a>
+   	  </div>
+    </div>
+  </div>
+
+<div id='content'>
+<div class='iWrapper'>
+	<input maxlength="7" type='text' />
+	<div class='pizza_overlay overlay'></div>
+    <div class='bread_overlay overlay'></div>
+    <div class='sandwich_overlay overlay'></div>
+    <div class='soup_overlay overlay'></div>
+    
+    <div class='popUp bread'></div>
+    <div class='popUp pizza'></div>
+    <div class='popUp sandwich'></div>
+    <div class='popUp soup'></div>
+    
+    <a href='' class='enter'></a>
+    <a href='' class='floatLink android'></a>
+    <a href='' class='floatLink apple'></a>
+    <a href='' class='findMellow'></a>
+    
+    <div class='yellowText'><br /><br /><br /><br /><br /><br /><br /><br />We're celebrating this harvest season with a special menu of delicious eats and a bounty of fresh picked prizes! So get in on the food & fun today and visit your local Mellow.</div>
+</div>
+</div>
+
+<div id='footer'>
+<div class='iWrapper'>
+<div class='socialBox'>
+<a href='' class='fb'></a>  <a href='' class='tw'></a>   <a href='' class='yt'></a>
+
+
+</div>
+<div class='footLinks'>Copyright &copy;2011 Home-Grown Industries of Gerorgia, Inc   &nbsp;&nbsp;  <a href=''>Terms</a>  |  <a href=''>Privacy</a></div>
+</div>
+</div>
+
+
+</div><!--END WRAPPER-->
+
+</body>
+</html>

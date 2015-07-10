@@ -1,0 +1,18 @@
+	.popUp img {
+		background: transparent;
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */      
+		zoom: 1;
+		z-index:1;
+		position:relative;
+	}
+	
+	.popUp{
+		z-index:2;		
+		position:absolute;
+	}
+	
+	.overlay{
+		z-index:34;
+		position:absolute;
+	}
